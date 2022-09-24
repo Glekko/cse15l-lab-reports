@@ -14,6 +14,6 @@ I have een to:
 - Florida
 - Arizona
 
-`print("My code")`
+`My code`
 
-[Banana] https://github.com/Glekko/cse15l-lab-reports/banana.md
+[Banana] https://github.com/Glekko/cse15l-lab-reports/banana.html
