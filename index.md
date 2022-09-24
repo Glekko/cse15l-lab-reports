@@ -16,4 +16,6 @@ I have een to:
 
 `My code`
 
-[Banana] https://github.com/Glekko/cse15l-lab-reports/banana.html
+[Banana] https://glekko.github.io/cse15l-lab-reports/banana.html
+
+
