@@ -19,3 +19,5 @@ I have been to:
 [Banana] https://glekko.github.io/cse15l-lab-reports/banana.html
 
 *This part is after editing in VS Code*
+
+[Lab Report 1](https://glekko.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
