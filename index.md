@@ -9,7 +9,7 @@ I like:
 2. Video Games
 3. Chess
 
-I have een to:
+I have been to:
 - Hong Kong
 - Florida
 - Arizona
