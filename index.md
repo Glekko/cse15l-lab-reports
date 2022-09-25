@@ -16,7 +16,7 @@ I have been to:
 
 `My code`
 
-[Banana] https://glekko.github.io/cse15l-lab-reports/banana.html
+[Banana](https://glekko.github.io/cse15l-lab-reports/banana.html)
 
 *This part is after editing in VS Code*
 
