@@ -1,7 +1,7 @@
 # Hello world!
 I'm Kevin and this is my **first** time using GitHub!
 *I hope to learn a lot this quarter!*
-> how does this blockquote thing work? >
+> how does this blockquote thing work? 
 
 
 I like:
@@ -20,4 +20,6 @@ I have been to:
 
 *This part is after editing in VS Code*
 
-[Lab Report 1](https://glekko.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+[Lab Report 1 Week 0](https://glekko.github.io/cse15l-lab-reports/lab-report-1-week-0.html)
+
+[Lab Report 1 Week 1](https://glekko.github.io/cse15l-lab-reports/lab-report-1-week-1.html)
