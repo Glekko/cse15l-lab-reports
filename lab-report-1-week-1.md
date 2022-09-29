@@ -91,5 +91,15 @@ You have now copied your public key over and can login without a password!
 
 # Step 6: Optimize Remote Running
 
+You can do a lot more on a line than you think!
+
+Try running 
+>`ssh cs15lfa22xx@ieng6.ucsd.edu "ls"`
+
+![Screenshot (162)](https://user-images.githubusercontent.com/114199299/193160656-6ec7ac3d-3819-4db2-9526-983a239b512c.png)
+
+The "ls" is an extra command that runs after logging in. 
+
+The gates are open to explore new ways of inputting commands. Go ahead and try!
 
 
