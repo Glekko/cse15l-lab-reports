@@ -14,7 +14,7 @@ class Handler implements URLHandler {
             String[] parameters = url.getQuery().split("=");
             if (parameters[0].equals("s")) {
                     allStrings.add(parameters[1]);
-                    return String.format(parameters[1], " added to catalog");
+                    return String.format(parameters[1] + " added to catalog");
                 }
         } else if (url.getPath().equals("/search")){
             String[] parameters = url.getQuery().split("=");
@@ -26,7 +26,7 @@ class Handler implements URLHandler {
                         }
                     }
                     
-                    return String.format("\nThis is your list of all words with ", parameters[1], ": ", appendSearch);
+                    return String.format("This is your list of words that contain: " + parameters[1] + ": " + appendSearch);
                 }
 
         }else{
@@ -37,7 +37,7 @@ class Handler implements URLHandler {
                     allEntries.concat(allStrings.get(i));
                 }
             }
-            return String.format("Here are all your entries: ", allEntries);
+            return String.format("Here are all your entries: " + allEntries);
         }
         return "404 Not Found!";
     }
