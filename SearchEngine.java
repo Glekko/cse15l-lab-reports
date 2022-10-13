@@ -21,12 +21,12 @@ class Handler implements URLHandler {
             String appendSearch = "";
             if (parameters[0].equals("s")) {
                     for(int i = 0; i < allStrings.size(); i++){
-                        if(allStrings.get(i).contains("app")){
-                            appendSearch = appendSearch.concat(allStrings.get(i));
+                        if(allStrings.get(i).contains(parameters[1])){
+                            appendSearch = appendSearch.concat(allStrings.get(i) + " ");
                         }
                     }
                     
-                    return String.format("This is your list of words that contain " + parameters[1] ": " + appendSearch);
+                    return String.format("This is your list of words that contain " + parameters[1] + ": " + appendSearch);
                 }
 
         }else{
