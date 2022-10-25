@@ -128,13 +128,17 @@ Identifying failure-inducing inputs was hard in this case, becasue the errors mo
 
 As you can see, input2 wasn't allowing me to compile. Over the course of a day and a half I was stuck trying to figure this out. I'll tell you straight up front, there are many things wrong here and it took me a while to fix them one by one. Firstly, assertArrayEquals works on Arrays. This seems obvious but I couldn't understand that until a few hours ago. A simple fix for that changing assertArrayEquals to just assertEquals. This is because we're trying to pass in Lists, which aren't technically arrays.
 
-The second issue was figuring out the correct way to pass in a StringChecker object, because ListExamples wanted a StringChecker as a parameter. This is why this was so hard for me. Interfaces weren't something I was super comfortable with, so understanding why I couldn't pass a StringChecker was weird for me. After a bit of research I learned that you can't actually create an object/class of StringChecker because Interfaces are Abstract. This led me to remembering in the summer session that interfaces, while they can't be used directly, can be passed indirectly through another class that has implemented the Interface. This was big, as it allowed me to finally figure out how to get the code actually running and produced:
+The second issue was figuring out the correct way to pass in a StringChecker object, because ListExamples wanted a StringChecker as a parameter. This is why this was so hard for me. Interfaces weren't something I was super comfortable with, so understanding why I couldn't pass a StringChecker was weird for me. After a bit of research I learned that you can't actually create an object/class of StringChecker because Interfaces are Abstract. This led me to remembering in the summer session that interfaces, while they can't be used directly, can be passed indirectly through another class that has implemented the Interface. 
+
+![StringChecker](Lab-Report-2-Pictures\stringCheckerPass.png)
+
+I then created an empty list called myList and passed it through in order to access the checkString method! This was big, as it allowed me to finally figure out how to get the code actually running and produced:
 
 ![ListErrors1](Lab-Report-2-Pictures\ListTestsErrors.png) 
 
 Well that's a problem... But at least we can deal with these one at a time. My first problem was that the ListExamples class I modified wanted a String object passed. I passed this, "s", thinking it worked for a string. Apparently it doesn't count, so I created a String object and set it equal to "s" and voila! 1 error down! 
 
-Another error I solved after reading some documentation. Using the fo-each version of a for loop doesn't keep track of indexes in arrays, so you can't manipulate an array through these. The add method kept trying to add to index 0, so it was a double error! First, For-each loops don't work on identifying indexes, and second, even if it did work, it'd just keep replacing the first element in the new arrayList with the newest element that matches the string!
+Another error I solved after reading some documentation. Using the for-each version of a for loop doesn't keep track of indexes in arrays, so you can't manipulate an array through these. The add method kept trying to add to index 0, so it was a double error! First, For-each loops don't work on identifying indexes, and second, even if it did work, it'd just keep replacing the first element in the new arrayList with the newest element that matches the string!
 
 ![LinkError2](Lab-Report-2-Pictures\ListExamples2.png)
 
