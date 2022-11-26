@@ -29,3 +29,5 @@ I have been to:
 [Week 5 Lab Report](https://glekko.github.io/cse15l-lab-reports/lab-report-week-5.html)
 
 [Week 7 Lab Report](https://glekko.github.io/cse15l-lab-reports/lab-report-week-7.html)
+
+[Final Lab Report](https://glekko.github.io/cse15l-lab-reports/lab-report-week-8-9.html)
